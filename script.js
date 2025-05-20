@@ -15,7 +15,7 @@ function loadBasicLayoutBody() {
     document.getElementById("basicBody").innerHTML = "";
     document.getElementById("basicBody").innerHTML = `
 <div style="width: 100%; height: fit-content; background-color: #e5e5e5; text-align: center;">
-        <h1 id="titelSpan" style="font-size: 350%;">Bürgerfonds Waldbrunn</h1>
+        <h1 id="titelSpan">Bürgerfonds Waldbrunn</h1>
         <nav class="navbar navbar-expand-lg" style="padding-bottom: 0;">
             <div class="container-fluid" style="background-color: #a3c814;">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
