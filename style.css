@@ -1,0 +1,52 @@
+body, html{
+    width: 100%;
+    margin: 0;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.3rem; /* Größerer Text */
+    padding: 0.8rem 1.2rem; /* Mehr Platz um den Text */
+}
+
+.navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-link {
+        font-size: 1.15rem; /* Etwas kleiner bei kleineren Bildschirmen */
+    }
+}
+
+body {
+    font-size: 1.25rem; /* Grundschrift größer */
+    line-height: 1.6;
+}
+
+h1, h2, h4, h5 {
+    font-size: 2rem;
+}
+
+.lead {
+    font-size: 1.5rem;
+}
+
+.card-body p {
+    font-size: 1.25rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.25rem;
+    padding: 0.8rem 1.2rem;
+}
+
+/* Optional für mobile Darstellung */
+@media (max-width: 768px) {
+    body {
+        font-size: 1.1rem;
+    }
+    .lead {
+        font-size: 1.3rem;
+    }
+}
