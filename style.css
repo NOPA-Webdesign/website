@@ -1,11 +1,27 @@
-body, html{
+/* Gesamtlayout */
+body, html {
     width: 100%;
     margin: 0;
+    font-size: 1.25rem; /* Grundschrift größer */
+    line-height: 1.6;
 }
 
+/* Titel-Überschrift */
+h1 {
+    font-size: 2.4rem; /* = 48px */
+    font-weight: bold;  
+    text-align: center;
+}
+
+/* Andere Überschriften */
+h2, h4, h5 {
+    font-size: 2rem;
+}
+
+/* Navigation */
 .navbar-nav .nav-link {
-    font-size: 1.3rem; /* Größerer Text */
-    padding: 0.8rem 1.2rem; /* Mehr Platz um den Text */
+    font-size: 1.3rem;
+    padding: 1rem 1.5rem; /* Mehr Abstand */
 }
 
 .navbar {
@@ -13,51 +29,31 @@ body, html{
     padding-bottom: 0.5rem;
 }
 
-h1{
-    font-size: 350%;
-}
-
-@media (max-width: 991.98px) {
-    .navbar-nav .nav-link {
-        font-size: 1rem; /* Etwas kleiner bei kleineren Bildschirmen */
-    }
-    h1{
-     font-size: 200%;   
-    }
-}
-
-body {
-    font-size: 1.25rem; /* Grundschrift größer */
-    line-height: 1.6;
-}
-
-h1, h2, h4, h5 {
-    font-size: 2rem;
-}
-
+/* Lead-Text */
 .lead {
     font-size: 1.5rem;
 }
 
+/* Karten-Text */
 .card-body p {
     font-size: 1.25rem;
 }
 
-.navbar-nav .nav-link {
-    font-size: 1.25rem;
-    padding: 0.8rem 1.2rem;
-}
-
-/* Optional für mobile Darstellung */
-@media (max-width: 768px) {
-    body {
-        font-size: 1.1rem;
+/* Responsive Optimierungen */
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    h1 {
+        font-size: 2rem;
     }
     .lead {
         font-size: 1.3rem;
     }
 }
 
+/* Footer */
 footer {
     font-size: 0.9rem;
     padding-top: 0.75rem;
