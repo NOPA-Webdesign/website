@@ -57,3 +57,12 @@ h1, h2, h4, h5 {
         font-size: 1.3rem;
     }
 }
+
+footer {
+    font-size: 0.9rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+footer a {
+    font-size: 0.9rem;
+}

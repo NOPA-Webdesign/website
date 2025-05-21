@@ -42,9 +42,20 @@ function loadBasicLayoutBody() {
     </div>
 
 
-    <main class="contentDiv" id="contentDiv">
-        
-    </main>
+<main class="contentDiv" id="contentDiv"></main>
+
+<footer class="text-center text-white small py-3" style="background-color: #a3c814;">
+    <div>
+        <p class="mb-1">© 2025 Bürgerfonds Waldbrunn e.V.</p>
+        <div>
+            <a href="javascript:loadPage('impressum', true)" class="text-white me-3 text-decoration-underline">Impressum</a>
+            <a href="javascript:loadPage('datenschutz', true)" class="text-white me-3 text-decoration-underline">Datenschutz</a>
+            <a href="javascript:loadPage('kontakt', true)" class="text-white text-decoration-underline">Kontakt</a>
+        </div>
+    </div>
+</footer>
+
+
       `;
 }
 
