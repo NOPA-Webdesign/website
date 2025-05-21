@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="basicBody" onload="loadStartHTML()">
+<body id="basicBody" onload="loadStartHTML(), setReiter(`Startseite`)">
 
 
     <div style="width: 100%; height: fit-content; background-color: #e5e5e5; text-align: center;">
@@ -25,12 +25,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" id="startseiteReiter" href="#">Startseite</a>
-                        <a class="nav-link" id="kantineReiter" href="#">Der
+                        <a class="nav-link" id="Startseite" href="javascript:loadPage(`Startseite`)">Startseite</a>
+                        <a class="nav-link" id="Bürgerfonds" href="javascript:loadPage(`Bürgerfonds`)">Der
                             Bürgerfonds</a>
-                        <a class="nav-link" id="finanzenReiter" href="#">Unterstützen</a>
-                        <a class="nav-link" id="kantinendienstReiter" href="#" hidden>Ansprechpartner</a>
-                        <a class="nav-link" id="verwalterReiter" href="#">Weitere
+                        <a class="nav-link" id="Unterstützen" href="javascript:loadPage(`Unterstützen`)">Unterstützen</a>
+                        <a class="nav-link" id="Ansprechpartner" href="javascript:loadPage(`Ansprechpartner`)">Ansprechpartner</a>
+                        <a class="nav-link" id="Anlaufstellen" href="javascript:loadPage(`Anlaufstellen`)">Weitere
                             Anlaufstellen</a>
                     </div>
                 </div>
@@ -49,11 +49,11 @@
         <div>
             <p class="mb-1">© 2025 Bürgerfonds Waldbrunn e.V.</p>
             <div>
-                <a href="javascript:loadPage('impressum', true)"
+                <a href="javascript:loadPage('impressum')"
                     class="text-white me-3 text-decoration-underline">Impressum</a>
-                <a href="javascript:loadPage('datenschutz', true)"
+                <a href="javascript:loadPage('datenschutz')"
                     class="text-white me-3 text-decoration-underline">Datenschutz</a>
-                <a href="javascript:loadPage('kontakt', true)" class="text-white text-decoration-underline">Kontakt</a>
+                <a href="javascript:loadPage('kontakt')" class="text-white text-decoration-underline">Kontakt</a>
             </div>
         </div>
     </footer>
