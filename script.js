@@ -74,24 +74,35 @@ function loadStartHTML() {
             </div>
         </div>
     `;
+    window.scrollTo(0, 0);
 }
 
 function loadPage(site) {
-  switch (site.toLowerCase()) {
-    case "startseite":
-      loadStartHTML();
-      break;
-    case "anlaufstellen":
-      loadAnlaufstellenHTML();
-      break;
-    case "impressum":
-      loadImpressumHTML();
-      break;
-    case "datenschutz":
-      loadDatenschutzHTML();
-      break;
-  }
-  setReiter(site);
+    switch (site.toLowerCase()) {
+        case "startseite":
+            loadStartHTML();
+            break;
+        case "bürgerfonds":
+            loadBuergerfondsHTML();
+            break;
+        case "unterstützen":
+            loadUnterstuetzenHTML();
+            break;
+        case "ansprechpartner":
+            loadAnsprechpartnerHTML();
+            break;
+        case "anlaufstellen":
+            loadAnlaufstellenHTML();
+            break;
+        case "impressum":
+            loadImpressumHTML();
+            break;
+        case "datenschutz":
+            loadDatenschutzHTML();
+            break;
+    }
+
+    setReiter(site);
 }
 
 function setReiter(reiter) {
@@ -106,6 +117,7 @@ function setReiter(reiter) {
     document.getElementById(element).style.fontWeight = "normal";
   });
   document.getElementById(reiter).style.fontWeight = "bold";
+  
 }
 
 function loadAnlaufstellenHTML() {
@@ -133,10 +145,11 @@ function loadAnlaufstellenHTML() {
             </div>
         </div>
     `;
+    window.scrollTo(0, 0);
 }
 
 function loadImpressumHTML() {
-    document.getElementById("contentDiv").innerHTML = `
+  document.getElementById("contentDiv").innerHTML = `
         <div class="container my-5 d-flex justify-content-center">
             <div class="text-center" style="max-width: 600px;">
                 <h2 class="mb-4">Impressum</h2>
@@ -162,8 +175,8 @@ function loadImpressumHTML() {
             </div>
         </div>
     `;
+    window.scrollTo(0, 0);
 }
-
 
 function loadDatenschutzHTML() {
   document.getElementById("contentDiv").innerHTML = `
@@ -186,4 +199,161 @@ function loadDatenschutzHTML() {
             E-Mail: hans.fiederling@t-online.de</p>
         </div>
     `;
+    window.scrollTo(0, 0);
 }
+
+function loadBuergerfondsHTML() {
+  document.getElementById("contentDiv").innerHTML = `
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow-sm border-0 bg-light">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-center mb-4">Was ist der Bürgerfonds Waldbrunn e.V.?</h2>
+                            <p>
+                                Der <strong>Bürgerfonds Waldbrunn e.V.</strong> ist eine solidarische Initiative, die Menschen aus Waldbrunn in akuten Notlagen unterstützt –
+                                schnell, vertraulich und unbürokratisch. Er wurde gegründet, um dort zu helfen, wo staatliche Hilfen zu spät greifen oder gar nicht vorgesehen sind.
+                            </p>
+                            <p>
+                                Wer Hilfe benötigt, kann sich vertrauensvoll an ein Mitglied des Vorstands wenden. Das Anliegen wird anonymisiert an eine
+                                unabhängige <strong>fünfköpfige Vergabekommission</strong> weitergeleitet. Nach Prüfung erfolgt eine Entscheidung, die dann zurück
+                                an den Vorstand übermittelt wird – ohne dabei persönliche Daten offenzulegen.
+                            </p>
+                            <p>
+                                Die Unterstützung erfolgt ausschließlich durch <strong>Spenden und freiwillige Beiträge</strong> aus der Bevölkerung und von Unternehmen.
+                                Alle Mittel werden direkt für Hilfsmaßnahmen verwendet – es entstehen keine Verwaltungskosten.
+                            </p>
+                            <p>
+                                Der Bürgerfonds ist damit ein Zeichen für gelebte Nächstenliebe und Zusammenhalt in unserer Gemeinde.
+                                Er ergänzt bestehende soziale Angebote und schließt Lücken, wo schnelle Hilfe notwendig ist.
+                            </p>
+                            <p class="text-center mt-4 fst-italic text-success">
+                                „Gemeinsam helfen – wenn es darauf ankommt.“
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    window.scrollTo(0, 0);
+}
+
+function loadUnterstuetzenHTML() {
+  document.getElementById("contentDiv").innerHTML = `
+        <div class="container my-5">
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-10">
+                    <div class="card shadow-sm border-0 bg-light">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-center mb-4">Wie Sie den Bürgerfonds unterstützen können</h2>
+                            <p>
+                                Jede Spende – ob groß oder klein – hilft dabei, Menschen aus Waldbrunn in schwierigen Lebenssituationen zu unterstützen. 
+                                Der Bürgerfonds springt dann ein, wenn staatliche Hilfen nicht greifen oder zu spät kommen.
+                            </p>
+                            <p>
+                                Ihre Unterstützung ermöglicht schnelle und unbürokratische Hilfe direkt vor Ort – ganz ohne Verwaltungskosten, denn alle arbeiten ehrenamtlich.
+                            </p>
+                            <p>
+                                Auch mit einem <strong>regelmäßigen Mitgliedsbeitrag</strong> oder einer einmaligen Spende leisten Sie einen wertvollen Beitrag für unsere Gemeinschaft.
+                                Jeder Euro zählt und kommt dort an, wo er gebraucht wird.
+                            </p>
+                            <p class="text-center mt-4 fst-italic text-success">
+                                „Helfen Sie mit – damit niemand in Waldbrunn allein gelassen wird.“
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-success shadow-sm">
+                        <div class="card-body text-center">
+                            <h4 class="card-title mb-3 text-success">Bankverbindung</h4>
+                            <p class="mb-1"><strong>Empfänger:</strong> Bürgerfonds Waldbrunn e.V.</p>
+                            <p class="mb-1"><strong>Bank:</strong> Raiffeisenbank Höchberg eG</p>
+                            <p class="mb-1"><strong>IBAN:</strong> DE22 7906 3122 0000 0025 93</p>
+                            <p class="mb-1"><strong>BIC:</strong> GENODEF1HBG</p>
+                            <p class="mt-3 fst-italic">Auf Wunsch stellen wir Ihnen gerne eine Spendenquittung aus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    window.scrollTo(0, 0);
+}
+
+function loadAnsprechpartnerHTML() {
+    document.getElementById("contentDiv").innerHTML = `
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow-sm border-0 bg-light">
+                        <div class="card-body p-4">
+                            <h2 class="text-center mb-4">Ansprechpartner für weitere Informationen</h2>
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                                ${[
+                                    {
+                                        name: "Hans Fiederling",
+                                        rolle: "Vorsitzender",
+                                        tel: "09306 - 1880",
+                                        mail: "hans.fiederling@t-online.de"
+                                    },
+                                    {
+                                        name: "Ludwig Götzelmann",
+                                        rolle: "Stellv. Vorsitzender",
+                                        tel: "09306 - 1539",
+                                        mail: "l-goetzelmann@t-online.de"
+                                    },
+                                    {
+                                        name: "Regina Schneider",
+                                        rolle: "Stellv. Vorsitzende",
+                                        tel: "09306 - 8435",
+                                        mail: "regschnei@yahoo.de"
+                                    },
+                                    {
+                                        name: "Paula Heller",
+                                        rolle: "Kassiererin",
+                                        tel: "09306 - 8541",
+                                        mail: "ph-heller@t-online.de"
+                                    },
+                                    {
+                                        name: "Martina Kronenberger",
+                                        rolle: "Stellv. Kassiererin",
+                                        tel: "09306 - 984573",
+                                        mail: "martina.kronenberger@t-online.de"
+                                    },
+                                    {
+                                        name: "Norbert Postberg",
+                                        rolle: "Schriftführer",
+                                        tel: "09306 - 2740",
+                                        mail: "norbert_postberg@yahoo.de"
+                                    }
+                                ].map(p => `
+                                    <div class="col">
+                                        <div class="border rounded p-3 h-100 shadow-sm bg-white">
+                                            <h5 class="mb-1">${p.name}</h5>
+                                            <p class="mb-1"><strong>${p.rolle}</strong></p>
+                                            <p class="mb-1">📞 ${p.tel}</p>
+                                            <p class="mb-0">✉️ <a href="mailto:${p.mail}" style="color: #a3c814;">${p.mail}</a></p>
+                                        </div>
+                                    </div>
+                                `).join('')}
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <img src="IMG_005B_2.jpg" alt="Vorstand des Bürgerfonds" class="img-fluid rounded shadow-sm" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    window.scrollTo(0, 0); 
+}
+
