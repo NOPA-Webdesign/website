@@ -40,8 +40,7 @@ function loadStartHTML() {
                             <h5 class="card-title mb-4">Grußwort von Bürgermeister Markus Haberstumpf</h5>
                             <div class="row">
                                 <div class="col-md-4 text-center mb-3">
-                                    <img src="bilder/Bürgermeister.png" alt="Bürgermeister">
-                                        alt="Bürgermeister Markus Haberstumpf" class="img-fluid rounded shadow-sm">
+                                    <img src="bilder/Bürgermeister.png" class="img-fluid rounded shadow-sm">    
                                 </div>
                                 <div class="col-md-8">
                                     <p><strong>gemeinsam · hilfsbereit · sozial</strong></p>
