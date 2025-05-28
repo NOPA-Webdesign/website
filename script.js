@@ -8,7 +8,7 @@ function loadStartHTML() {
                     Der Bürgerfonds ist eine Initiative zur Unterstützung von Mitbürgerinnen und Mitbürgern in
                     schwierigen Lebenslagen – schnell, unbürokratisch und solidarisch.
                 </p>
-                <img src="Logo Bürgerfons Waldbrunn.jpg" alt="Hände mit Herzen"
+                <img src="bilder/Logo.jpg" alt="Logo"
                     class="img-fluid my-3" style="max-height: 300px;">
                 <p class="fst-italic">Teilen – für ein besseres Miteinander</p>
             </div>
@@ -40,7 +40,7 @@ function loadStartHTML() {
                             <h5 class="card-title mb-4">Grußwort von Bürgermeister Markus Haberstumpf</h5>
                             <div class="row">
                                 <div class="col-md-4 text-center mb-3">
-                                    <img src="image.png"
+                                    <img src="bilder/Bürgermeister.png" alt="Bürgermeister">
                                         alt="Bürgermeister Markus Haberstumpf" class="img-fluid rounded shadow-sm">
                                 </div>
                                 <div class="col-md-8">
@@ -348,7 +348,7 @@ function loadAnsprechpartnerHTML() {
                     </div>
 
                     <div class="text-center mt-4">
-                        <img src="IMG_005B_2.jpg" alt="Vorstand des Bürgerfonds" class="img-fluid rounded shadow-sm" style="max-width: 100%; height: auto;">
+                        <img src="bilder/GruppenBild.jpg" alt="GruppenBild" class="img-fluid rounded shadow-sm" style="max-width: 100%; height: auto;">
                     </div>
                 </div>
             </div>
