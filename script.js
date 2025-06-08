@@ -14,56 +14,57 @@ function loadStartHTML() {
             </div>
         </div>
     `;
-    window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
 }
 
 function loadPage(site) {
-    switch (site.toLowerCase()) {
-        case "startseite":
-            loadStartHTML();
-            break;
-        case "bürgerfonds":
-            loadBuergerfondsHTML();
-            break;
-        case "unterstützen":
-            loadUnterstuetzenHTML();
-            break;
-        case "ansprechpartner":
-            loadAnsprechpartnerHTML();
-            break;
-        case "anlaufstellen":
-            loadAnlaufstellenHTML();
-            break;
-        case "impressum":
-            loadImpressumHTML();
-            break;
-        case "datenschutz":
-            loadDatenschutzHTML();
-            break;
-        case "satzung":
-            loadSatzungHTML();
-            break;
-        case "grußwort":
-            loadGrußwortHTML();
-            break;
-    }
+  switch (site.toLowerCase()) {
+    case "startseite":
+      loadStartHTML();
+      break;
+    case "bürgerfonds":
+      loadBuergerfondsHTML();
+      break;
+    case "unterstützen":
+      loadUnterstuetzenHTML();
+      break;
+    case "ansprechpartner":
+      loadAnsprechpartnerHTML();
+      break;
+    case "anlaufstellen":
+      loadAnlaufstellenHTML();
+      break;
+    case "impressum":
+      loadImpressumHTML();
+      break;
+    case "datenschutz":
+      loadDatenschutzHTML();
+      break;
+    case "satzung":
+      loadSatzungHTML();
+      break;
+    case "grußwort":
+      loadGrußwortHTML();
+      break;
+  }
 
-    setReiter(site);
+  setReiter(site);
 }
 
 function setReiter(reiter) {
   reiterArray = [
     "Startseite",
+    "Grußwort",
     "Bürgerfonds",
     "Unterstützen",
     "Ansprechpartner",
-    "Anlaufstellen",
+    "Anlaufstellen"
   ];
   reiterArray.forEach((element) => {
     document.getElementById(element).style.fontWeight = "normal";
   });
   document.getElementById(reiter).style.fontWeight = "bold";
-  
+
 }
 
 function loadAnlaufstellenHTML() {
@@ -92,7 +93,7 @@ function loadAnlaufstellenHTML() {
             </div>
         </div>
     `;
-    window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
 }
 
 function loadImpressumHTML() {
@@ -128,7 +129,7 @@ function loadImpressumHTML() {
         <br>
         <br>
     `;
-      window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
 }
 
 function loadDatenschutzHTML() {
@@ -152,7 +153,7 @@ function loadDatenschutzHTML() {
             E-Mail: Hans.Fiederling@Bürgerfonds-Waldbrunn.de</p>
         </div>
     `;
-    window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
 }
 
 function loadBuergerfondsHTML() {
@@ -180,15 +181,16 @@ function loadBuergerfondsHTML() {
                             <p class="text-center mt-4 fst-italic text-success">
                                 „Gemeinsam helfen – wenn es darauf ankommt.“
                             </p>
-                            TODO
-                            FOTO MIT HÄNDEN 
+                    <div class="text-center mt-4">
+                        <img src="bilder/händeGruppe.jpg" alt="GruppenBild" class="img-fluid rounded shadow-sm" style="max-width: 75%; height: auto;">
+                    </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     `;
-    window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
 }
 
 function loadUnterstuetzenHTML() {
@@ -232,11 +234,11 @@ function loadUnterstuetzenHTML() {
             TODO FOTO MIT HERZ HÄNDEN
         </div>
     `;
-    window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
 }
 
 function loadAnsprechpartnerHTML() {
-    document.getElementById("contentDiv").innerHTML = `
+  document.getElementById("contentDiv").innerHTML = `
         <div class="container my-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
@@ -246,50 +248,50 @@ function loadAnsprechpartnerHTML() {
                             <div class="row row-cols-1 row-cols-md-2 g-4">
 
                                 ${[
-                                    {
-                                        name: "Hans Fiederling",
-                                        rolle: "Vorsitzender",
-                                        tel: "09306 - 1880",
-                                        mail: "Hans.Fiederling@Bürgerfonds-Waldbrunn.de",
-                                        icon: "✉️    "
-                                    },
-                                    {
-                                        name: "Ludwig Götzelmann",
-                                        rolle: "Stellv. Vorsitzender",
-                                        tel: "09306 - 1539",
-                                        mail: "Ludwig.Goetzelmann@Bürgerfonds-Waldbrunn.de",
-                                        icon: "✉️    "
-                                    },
-                                    {
-                                        name: "Regina Schneider",
-                                        rolle: "Stellv. Vorsitzende",
-                                        tel: "09306 - 8435",
-                                        mail: "Regina.Schneider@Bürgerfonds-Waldbrunn.de",
-                                        icon: "✉️    "
-                                    },
-                                    {
-                                        name: "Paula Heller",
-                                        rolle: "Kassiererin",
-                                        tel: "09306 - 8541",
-                                        mail: "",
-                                        icon: ""
-                                    },
-                                    {
-                                        name: "Martina Kronenberger",
-                                        rolle: "Stellv. Kassiererin",
-                                        tel: "09306 - 984573",
-                                        mail: "",
-                                        icon: ""
-                                    },
-                                    {
-                                        name: "Norbert Postberg",
-                                        rolle: "Schriftführer",
-                                        tel: "09306 - 2740",
-                                        mail: "Norbert.Postberg@Bürgerfonds-Waldbrunn.de",
-                                        icon: "✉️    "
+      {
+        name: "Hans Fiederling",
+        rolle: "Vorsitzender",
+        tel: "09306 - 1880",
+        mail: "Hans.Fiederling@Bürgerfonds-Waldbrunn.de",
+        icon: "✉️    "
+      },
+      {
+        name: "Ludwig Götzelmann",
+        rolle: "Stellv. Vorsitzender",
+        tel: "09306 - 1539",
+        mail: "Ludwig.Goetzelmann@Bürgerfonds-Waldbrunn.de",
+        icon: "✉️    "
+      },
+      {
+        name: "Regina Schneider",
+        rolle: "Stellv. Vorsitzende",
+        tel: "09306 - 8435",
+        mail: "Regina.Schneider@Bürgerfonds-Waldbrunn.de",
+        icon: "✉️    "
+      },
+      {
+        name: "Paula Heller",
+        rolle: "Kassiererin",
+        tel: "09306 - 8541",
+        mail: "",
+        icon: ""
+      },
+      {
+        name: "Martina Kronenberger",
+        rolle: "Stellv. Kassiererin",
+        tel: "09306 - 984573",
+        mail: "",
+        icon: ""
+      },
+      {
+        name: "Norbert Postberg",
+        rolle: "Schriftführer",
+        tel: "09306 - 2740",
+        mail: "Norbert.Postberg@Bürgerfonds-Waldbrunn.de",
+        icon: "✉️    "
 
-                                    }
-                                ].map(p => `
+      }
+    ].map(p => `
                                     <div class="col">
                                         <div class="border rounded p-3 h-100 shadow-sm bg-white">
                                             <h5 class="mb-1">${p.name}</h5>
@@ -311,7 +313,7 @@ function loadAnsprechpartnerHTML() {
             </div>
         </div>
     `;
-    window.scrollTo(0, 0); 
+  window.scrollTo(0, 0);
 }
 
 function loadSatzungHTML() {
@@ -330,83 +332,92 @@ function loadSatzungHTML() {
               <p>4. Das Geschäftsjahr ist das Kalenderjahr.</p>
 
               <h5 class="mt-4">§ 2 Zweck des Vereins</h5>
-              <p>1. Der Verein verfolgt ausschließlich und unmittelbar mildtätige Zwecke im Sinne des Abschnitts „Steuerbegünstigte Zwecke“ der Abgabenordnung. Zweck des Vereins ist die Unterstützung hilfsbedürftiger Personen innerhalb des Gemeindegebietes. Dies erfolgt zum Einen durch die Unterstützung persönlich bedürftiger Personen, welche gemäß § 53 Nr. 1 Abgabenordnung (AO) infolge ihres körperlichen, geistigen oder seelischen Zustandes auf die Hilfe anderer angewiesen sind, und zum Anderen durch die Unterstützung von Personen, deren wirtschaftliche Lage aus besonderen Gründen zu einer Notlage geworden ist. Die Unterstützung erfolgt freiwillig. Es besteht kein Rechtsanspruch auf Unterstützung durch den Verein.</p>
+              <p>1. Der Verein verfolgt ausschließlich und unmittelbar mildtätige Zwecke im Sinne des Abschnitts Steuerbegünstigte Zwecke" der Abgabenordnung. Zweck des Vereins ist die Unterstützung hilfsbedürftiger Personen innerhalb des Gemeindegebietes. Dies erfolgt zum Einem durch die Unterstützung persönlich bedürftiger Personen, welche gemäß § 53 Nr. 1 Abgabenordnung (AO) infolge ihres körperlichen, geistigen oder seelischen Zustandes auf die Hilfe anderer angewiesen sind, und zum Anderen durch die Unterstützung von Personen, deren wirtschaftliche Lage aus besonderen Gründen zu einer Notlage geworden ist. Die Unterstützung erfolgt freiwillig. Es besteht kein Rechtsanspruch auf Unterstützung durch den Verein.</p>
               <p>2. Der Verein ist selbstlos tätig; er verfolgt nicht in erster Linie eigenwirtschaftliche Zwecke.</p>
               <p>3. Mittel des Vereins dürfen nur für die satzungsmäßigen Zwecke verwendet werden. Es darf keine Person durch Ausgaben, die dem Zweck der Körperschaft fremd sind, oder durch unverhältnismäßig hohe Vergütungen begünstigt werden.</p>
 
               <h5 class="mt-4">§ 3 Erwerb der Mitgliedschaft</h5>
               <p>1. Mitglied des Vereins kann jede natürliche Person nach Vollendung des 16. Lebensjahres und jede juristische Person werden.</p>
               <p>2. Wer die Mitgliedschaft erwerben will, hat an den Verein ein schriftliches Aufnahmegesuch zu richten.</p>
-              <p>3. Über die Ablehnung oder Annahme des Aufnahmegesuchs entscheidet der Vorstandsvorsitzende. Gegen die Ablehnung des Aufnahmeantrages kann der Bewerber innerhalb eines Monats nach Bekanntgabe der Ablehnung beim Vorstand schriftlich Berufung einlegen. Über die Berufung entscheidet die erweiterte Vorstandschaft abschließend.</p>
+              <p>3. Über die Ablehnung oder Annahme des Aufnahmegesuches entscheidet der Vorstandsvorsitzende Gegen die Ablehnung des Aufnahmeantrages kann der Bewerber innerhalb eines Monats nach Bekanntgabe der Ablehnung beim Vorstand schriftlich Berufung einlegen. Über die Berufung entscheidet die erweiterte Vorstandschaft (§ 8 Ziff. 1) abschließend.</p>
               <p>4. Ein Aufnahmeanspruch besteht nicht.</p>
 
- <h5 class="mt-4">§ 4 Beendigung der Mitgliedschaft</h5>
-<p>1. Die Mitgliedschaft endet durch Tod, Austritt, Ausschluss oder Streichung von der Mitgliederliste.</p>
-<p>2. Der Austritt ist nur zum Jahresende mit einer Frist von drei Monaten möglich und bedarf der schriftlichen Erklärung gegenüber dem Vorstand.</p>
-<p>3. Ein Ausschluss erfolgt bei Zahlungsrückstand trotz Mahnung oder bei vereinsschädigendem Verhalten durch Beschluss des Vorstands.</p>
+              <h5 class="mt-4">§ 4 Beendigung der Mitgliedschaft</h5>
+              <p>1. Die Mitgliedschaft endet durch Tod, Ausschluss, Streichung von der Mitgliederliste oder Austritt aus dem Verein.</p>
+              <p>2. Der Austritt erfolgt durch schriftliche Erklärung gegenüber dem Vorstand. Der Austritt kann nur zum Jahresende erklärt werden, wobei eine Kündigungsfrist von drei Monaten einzuhalten ist.</p>
+              <p>3. Ein Mitglied kann durch Beschluss des Vorstands von der Mitgliederliste gestrichen werden, wenn es mit der Zahlung von Mitgliedsbeiträgen im Rückstand ist. Die Streichung darf erst beschlossen werden, wenn auch nach schriftlicher Mahnung der Zahlungsrückstand nicht innerhalb von drei Monaten ausgeglichen wird. Auf diese Rechtsfolge ist in der Mahmung hinzuweisen. Eine Streichung ist auch möglich, wenn keine Zahlung erfolgt und der Aufenthaltsort (Adresse) des Mitglieds innerhalb von drei Monaten nicht ermittelt werden kann.</p>
+              <p>4. Wenn ein Mitglied schuldhaft in grober Weise die Interessen des Vereins verletzt, kann es durch Beschluss des Vorstands aus dem Verein ausgeschlossen werden. Vor der Beschlussfassung muss der Vorstand dem Mitglied Gelegenheit zur Stellungnahme geben, verbunden mit der Aufforderung. sich binnen einer Frist von zwei Wochen schriftlich zu erklären. Der Beschluss des Vorstands ist schriftlich zu begründen und dem Mitglied zuzusenden. Gegen den Beschluss kann das Mitglied Berufung an die erweiterte Vorstandschaft (§ 8 Ziff. 1) einlegen. Die Berufung ist innerhalb eines Monats nach Zugang des Beschlusses beim Vorstandsvorsitzenden einzulegen. Über die Berufung entscheidet die erweiterte Vorstandschaft (§ 8 Ziff. 1) abschließend. Bis zur Entscheidung der erweiterten Vorstandschaft ruhen die Mitgliedschaftsrechte.</p>
+              
+              <h5 class="mt-4">§ 5 Mitgliedschaftspflichten</h5>
+              <p>1. Es ist ein jährlicher Mitgliedschaftsbeitrag zu leisten.</p>
+              <p>2. Die Höhe des Mitgliedschaftsbeitrags bestimmt die Mitgliederversammlung durch Beschluss mit einfacher Mehrheit der anwesenden Mitglieder.</p>
+              <p>3. Der Beitrag ist zu Beginn des Kalenderjahres im Voraus fällig</p>
+              
+              <h5 class="mt-4">§ 6 Mitgliedsrechte </h5>
+              <p>1. Mitglieder, die geschäftsunfähig sind, haben kein Stimmrecht.</p>
+              <p>2. Als Mitglied eines Vereinsorgans können gewählt werden: natürliche Personen, die volljährig und vollgeschäftsfähig" sind.</p>
+              <p>3. Sie müssen Vereinsmitglied sein. </p>
 
-<h5 class="mt-4">§ 5 Mitgliedschaftspflichten</h5>
-<p>1. Es ist ein jährlicher Mitgliedsbeitrag zu leisten.</p>
-<p>2. Die Höhe wird durch die Mitgliederversammlung festgelegt.</p>
-<p>3. Der Beitrag ist zu Beginn des Kalenderjahres im Voraus zu entrichten.</p>
+              <h5 class="mt-4">§ 7 Organe des Vereins</h5>
+              <p>Organe des Vereins sind:</p>
+              <ul>
+                <li>1. Der Vorstand.</li>
+                <li>2. Die Mitgliederversammlung. </li>
+                <li>3. Die Vergabekommission.</li>
+              </ul>
 
-<h5 class="mt-4">§ 6 Mitgliedsrechte</h5>
-<p>1. Stimmberechtigt sind alle geschäftsfähigen Mitglieder.</p>
-<p>2. In Vereinsorgane wählbar sind nur volljährige Mitglieder.</p>
+              <h5 class="mt-4">§ 8 Der Vorstand </h5>
+              <p>1. Der erweiterte Vorstand besteht aus dem ersten Vorsitzenden, zwei stellvertretenden Vorsitzenden, dem Kassier und dem Schriftführer. Die stellvertretenden Vorsitzenden können je auch das Vorstandsamt des Kassierers oder des Schriftführers übertragen erhalten. Der Vorstand besteht aus mindestens drei Personen. </p>
+              <p>2. Der Verein wird vom ersten Vorsitzenden allein oder den beiden Stellvertretern gemeinsam vertreten. Im Innenverhältnis gilt, dass der Verein nur bei Verhinderung des 1. Vorsitzenden von beiden Stellvertretern gemeinsam vertreten wird. Der Vorsitzende und die beiden Stellvertreter sind Vorstände im Sinne des 26 BGB.</p>
+              <p>3. Der Vorstand wird durch Beschluss der Mitgliederversammlung auf die Dauer von drei Jahren gewählt und bestellt. Er bleibt bis zur ordnungsgemäßen Neubestellung des Nachfolgevorstands im Amt.</p>
+              <p>4. Das Amt eines Mitglieds des Vorstandes endet außerdem mit seinem Ausscheiden aus dem Verein. mit seiner Abberufung durch die Mitgliederversammlung oder mit seiner Erklärung, dass er das Amt niederlegt.</p>
+              <p>5. Dem Vorstand obliegt die gerichtliche und außergerichtliche Vertretung des Vereins nach außen</p>
 
-<h5 class="mt-4">§ 7 Organe des Vereins</h5>
-<p>1. Der Vorstand</p>
-<p>2. Die Mitgliederversammlung</p>
-<p>3. Die Vergabekommission</p>
+              <h5 class="mt-4">§9 Die Vergabekommission </h5>
+              <p>1. Über die Vergabe von Mitteln (Geld oder Sachwerte) entscheidet die Vergabekommission.</p>
+              <p>2. Die Vergabekommission besteht aus fünf Mitgliedern. Diese werden durch Beschluss der Mitgliederversammlung auf die Dauer von drei Jahren gewählt und bestellt. Die Kommission bleibt bis zur ordnungsgemäßen Neubestellung der Nachfolgekommission im Amt.</p>
+              <p>3. An der Beschlussfassung über die Vergabe von Mitteln müssen mindestens drei Mitglieder mitwirken. Im Zweifel entscheidet die Mehrheit der Kommissionsmitglieder, ein Rechtsanspruch besteht nicht</p>
+              <p>4. Die Mitglieder der Vergabekommission sind zur absoluten Geheimhaltung der ihnen bekannt werdenden Verhältnisse der Hilfsempfänger verpflichtet, dies gilt nicht gegenüber dem Vorstand und den Revisoren.</p>
+              <p>5. Die Pflicht zur Verschwiegenheit gilt lebenslang und wirkt auch nach Ausscheiden aus der Vergabekommission bzw. nach Ausscheiden aus dem Verein fort.</p>
 
-<h5 class="mt-4">§ 8 Der Vorstand</h5>
-<p>1. Der erweiterte Vorstand besteht aus dem Vorsitzenden, zwei stellvertretenden Vorsitzenden, dem Kassierer und dem Schriftführer.</p>
-<p>2. Der Verein wird gerichtlich und außergerichtlich durch zwei Mitglieder des Vorstands gemeinsam vertreten.</p>
-<p>3. Die Amtszeit des Vorstands beträgt drei Jahre.</p>
+              <h5 class="mt-4">§10 Einberufung von Sitzungen </h5>
+              <p>1. Sitzungen des Vorstandes sind je nach Bedarf, jedenfalls aber auf Antrag eines Mitglieds des jeweiligen Organs einzuberufen.</p>
+              <p>2. Die Einberufung geschieht durch den Vorsitzenden, bei dessen Verhinderung durch einen der Stellvertreter.</p>
 
-<h5 class="mt-4">§ 9 Die Vergabekommission</h5>
-<p>1. Die Kommission besteht aus fünf von der Mitgliederversammlung gewählten Mitgliedern mit einer Amtszeit von drei Jahren.</p>
-<p>2. Für Vergabeentscheidungen ist eine Mehrheit von mindestens drei Mitgliedern erforderlich.</p>
-<p>3. Alle Mitglieder sind zur lebenslangen Verschwiegenheit verpflichtet.</p>
+              <h5 class="mt-4">§ 11 Revisoren</h5>
+              <p>1. Über das abgelaufene Geschäftsjahr muss durch Revisoren eine Kassenprüfung erfolgen. Das Prüfungsergebnis ist der ordentlichen Mitgliederversammlung vorzulegen.</p>
+              <p>2. Die Mitgliederversammlung wählt für die Dauer von drei Jahren drei Revisoren.</p>
 
-<h5 class="mt-4">§ 10 Einberufung von Sitzungen</h5>
-<p>1. Sitzungen werden bei Bedarf oder auf Antrag eines Organsmitglieds einberufen.</p>
-<p>2. Die Einberufung erfolgt durch den Vorsitzenden oder seinen Stellvertreter.</p>
+              <h5 class="mt-4">§ 12 Die ordentliche Mitgliederversammlung</h5>
+              <p>1. Mindestens einmal im Jahr, möglichst im ersten Quartal, findet eine ordentliche Mitgliederversammlung statt.</p>
+              <p>2. Die Einberufung zu jeder Mitgliederversammlung mit Angabe der Tagesordnung erfolgt mindestens zwei Wochen vorher durch schriftliche Einladung (per Brief oder E-Mail) durch den Vorstand. Die Frist beginnt mit dem auf die Absendung des Einladungsschreibens folgenden Tag. Das Einladungsschreiben gilt dem Mitglied als zugegangen, wenn es an die letzte vom Mitglied dem Verein schriftlich bekannt gegebene Adresse gerichtet ist. Außerdem erfolgt eine öffentliche Bekanntmachung im Waldbrunner Mitteilungsblatt.</p>
+              <p>3. Die Tagesordnung setzt der Vorstand fest. Jedes Mitglied kann bis spätestens eine Woche vor einer Mitgliederversammlung beim Vorstand schriftlich eine Ergänzung der Tagesordnung beantragen. Der Versammlungsleiter kann zu Beginn der Mitgliederversammlung die Ergänzung bekannt geben. Über Anträge auf Ergänzung der Tagesordnung, die in der Mitgliederversammlung gestellt werden, beschließt die Mitgliederversammlung.</p>
 
-<h5 class="mt-4">§ 11 Revisoren</h5>
-<p>1. Drei Revisoren werden von der Mitgliederversammlung für drei Jahre gewählt.</p>
-<p>2. Sie führen jährlich eine Kassenprüfung durch.</p>
+              <h5 class="mt-4">§ 13 Außerordentliche Mitgliederversammlung und Beschlussfassung außerhalb der Mitgliederversammlung</h5>
+              <p>Eine außerordentliche Mitgliederversammlung ist vom Vorstand einzuberufen, wenn das Interesse des Vereins es erfordert (§ 36 BGB) oder wenn ein Fünftel der Mitglieder dies schriftlich unter Angabe des Zweckes und der Gründe beantragt</p>
 
-<h5 class="mt-4">§ 12 Ordentliche Mitgliederversammlung</h5>
-<p>1. Findet mindestens einmal im Jahr statt, möglichst im ersten Quartal.</p>
-<p>2. Einladung erfolgt mindestens zwei Wochen vorher schriftlich oder per E-Mail unter Angabe der Tagesordnung.</p>
-<p>3. Anträge zur Tagesordnung können bis eine Woche vor der Versammlung gestellt werden.</p>
+              <h5 class="mt-4">§ 14 Die Zuständigkeit der Mitgliederversammlung</h5>
+              <p>Die Mitgliederversammlung ist für die in dieser Satzung ihr ausdrücklich zur Beschlussfassung übertragenen Vereinsangelegenheiten zuständig. Insbesondere:</p>
+              <ul>
+                <li>1. Wahl der Vorstandschaft und der Vergabekommission</li>
+                <li>2. Entgegennahme des Jahresberichtes des Vorstandes und Entlastung des Vorstandes</li>
+                <li>3. Beschlussfassung über Änderung der Satzung und über die Auflösung des Vereins</li>
+                <li>4. Festsetzung der Mitgliedsbeiträge</li>
+                <li>5. Wahl der Revisoren</li>
+                <li>6. Festlegung der Vergaberichtlinien</li>
+              </ul>
 
-<h5 class="mt-4">§ 13 Außerordentliche Mitgliederversammlung</h5>
-<p>1. Wird einberufen, wenn das Vereinsinteresse es erfordert oder ein Fünftel der Mitglieder dies schriftlich beantragt.</p>
+              <h5 class="mt-4">§ 15 Beschlussfassung der Mitgliederversammlung</h5>
+              <p>1. Die Mitgliederversammlung wird vom Vorsitzenden, bei dessen Verhinderung vom einem stellvertretenden Vorstand geleitet. Ist kein Vorstandsmitglied anwesend, bestimmt die Versammlung einen Versammlungsleiter.</p>
+              <p>2. Die Mitgliederversammlung ist beschlussfähig ohne Rücksicht auf die Zahl der erschienenen Mitglieder.</p>
+              <p>3. Die Art der Abstimmung bestimmt der Versammlungsleiter. Die Abstimmung muss schriftlich durchgeführt werden, wenn ein Drittel der stimmberechtigten Mitglieder dies beantragt. Wird über die Aufnahme neuer Mitglieder oder über den Ausschluss von Mitgliedern abgestimmt, so hat die Abstimmung schriftlich zu erfolgen. Das auszuschließende Mitglied hat bei der Beschlussfassung kein Stimmrecht.</p>
+              <p>4. In der Mitgliederversammlung hat jedes Mitglied eine Stimme.</p>
+              <p>5. Die Mitgliederversammlung fasst Beschlüsse im Allgemeinen mit einfacher Mehrheit der abgegebenen gültigen Stimmen. Stimmenthaltungen gelten als ungültige Stimmen. Zur Änderung der Satzung ist jedoch eine Mehrheit von zwei Drittel der abgegebenen gültigen Stimmen, zur Auflösung des Vereins oder zur Änderung des Zwecks eine solche von vier Fünfteln erforderlich.</p>
+              <p>6. Über Beschlüsse der Mitgliederversammlung ist ein Protokoll zu führen. Dieses ist vom Leiter der Mitgliederversammlung zu unterschreiben.</p>
 
-<h5 class="mt-4">§ 14 Zuständigkeit der Mitgliederversammlung</h5>
-<ul>
-  <li>Wahl von Vorstand und Vergabekommission</li>
-  <li>Entgegennahme und Entlastung des Jahresberichts</li>
-  <li>Beschluss über Satzungsänderungen und Vereinsauflösung</li>
-  <li>Festsetzung der Mitgliedsbeiträge</li>
-  <li>Wahl der Revisoren</li>
-  <li>Festlegung der Vergaberichtlinien</li>
-</ul>
-
-<h5 class="mt-4">§ 15 Beschlussfassung</h5>
-<p>1. Die Versammlung wird vom Vorsitzenden oder bei Verhinderung von einem Stellvertreter geleitet. Ist kein Vorstandsmitglied anwesend, wählt die Versammlung eine Leitung.</p>
-<p>2. Sie ist ohne Rücksicht auf die Zahl der erschienenen Mitglieder beschlussfähig.</p>
-<p>3. Abstimmungen erfolgen mit einfacher Mehrheit, Satzungsänderungen mit 2/3-, Zweckänderungen und Auflösung mit 4/5-Mehrheit.</p>
-<p>4. Jedes Mitglied hat eine Stimme. Über Beschlüsse ist ein Protokoll zu führen und vom Versammlungsleiter zu unterzeichnen.</p>
-
-<h5 class="mt-4">§ 16 Auflösung des Vereins</h5>
-<p>1. Die Liquidation erfolgt durch den bei Auflösung amtierenden Vorstand.</p>
-<p>2. Das Vereinsvermögen fällt an die Gemeinde Waldbrunn zur Verwendung für gemeinnützige Zwecke.</p>
-
-<p class="text-end mt-4"><em>Waldbrunn, 02.10.2023</em></p>
-<p class="text-end"><em>(Unterschriften der Vorstandschaft im Original)</em></p>
+              <h5 class="mt-4">§ 16 Auflösung des Vereins</h5>
+              <p>1. Bei Auflösung des Vereins erfolgt die Liquidation durch den bei der Auflösung bestehenden Vorstand.</p>
+              <p>2. Bei Auflösung des Vereins oder bei Wegfall des bisherigen Zweckes fällt das Vereinsvermögen an die Gemeinde Waldbrunn. Diese hat es zu gemeinnützigen Zwecken im Sinne des Vereins zu verwenden.</p>
 
             </div>
           </div>
@@ -417,8 +428,8 @@ function loadSatzungHTML() {
   window.scrollTo(0, 0);
 }
 
-function loadGrußwortHTML(){
-     document.getElementById("contentDiv").innerHTML = `
+function loadGrußwortHTML() {
+  document.getElementById("contentDiv").innerHTML = `
     <div class="container my-5">
       <div class="row justify-content-center">
         <div class="col-md-10">
