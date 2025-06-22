@@ -47,6 +47,9 @@ function loadPage(site) {
     case "grußwort":
       loadGrußwortHTML();
       break;
+    case "mitglied":
+      loadMitgliedHTML();
+      break;
   }
 
   setReiter(site);
@@ -201,17 +204,21 @@ function loadUnterstuetzenHTML() {
                 <div class="col-lg-10">
                     <div class="card shadow-sm border-0 bg-light">
                         <div class="card-body p-4">
-                            <h2 class="card-title text-center mb-4">Wie Sie den Bürgerfonds unterstützen können</h2>
+                           <h2 class="card-title text-center mb-4">Wie Sie den Bürgerfonds unterstützen können</h2>
                             <p>
-                                Mit einem <strong>regelmäßigen Mitgliedsbeitrag</strong> oder einer einmaligen Spende, ob groß oder klein, leisten Sie einen wertvollen Beitrag für unsere Gemeinschaft.
-                                Jeder Euro zählt und kommt dort an, wo er gebraucht wird.
+                              Mit einem <strong>regelmäßigen Mitgliedsbeitrag</strong> oder einer einmaligen Spende, ob groß oder klein, leisten Sie einen wertvollen Beitrag für unsere Gemeinschaft.
+                              Jeder Euro zählt und kommt dort an, wo er gebraucht wird.
+                            </p>
+                            <p>
+                              Der Bürgerfonds ist damit ein Zeichen für gelebte Nächstenliebe und Zusammenhalt in unserer Gemeinde.
+                              Er ergänzt bestehende soziale Angebote und schließt Lücken, wo schnelle Hilfe notwendig ist.
+                            </p>
+                            <p class="mt-3">
+                              💡 <strong>Tipp:</strong> Sie können uns auch unterstützen, indem Sie Mitglied im Bürgerfonds werden.
+                              <a href="#" onclick="loadMitgliedHTML()" style="color: #a3c814;">Hier erfahren Sie, wie das geht.</a>
                             </p>
                             <p class="text-center mt-4 fst-italic text-success">
-                                „Helfen Sie mit – damit niemand in Waldbrunn allein gelassen wird.“
-                            </p>
-                            <p
-                                  Der Bürgerfonds ist damit ein Zeichen für gelebte Nächstenliebe und Zusammenhalt in unserer Gemeinde.
-                                  Er ergänzt bestehende soziale Angebote und schließt Lücken, wo schnelle Hilfe notwendig ist.
+                              „Helfen Sie mit – damit niemand in Waldbrunn allein gelassen wird.“
                             </p>
                         </div>
                     </div>
@@ -232,7 +239,9 @@ function loadUnterstuetzenHTML() {
                     </div>
                 </div>
             </div>
-            TODO FOTO MIT HERZ HÄNDEN
+              <div class="text-center mt-4">
+                        <img src="bilder/handHerz.jpg" alt="GruppenBild" class="img-fluid rounded shadow-sm" style="max-width: 45%; height: auto;">
+              </div>
         </div>
     `;
   window.scrollTo(0, 0);
@@ -456,6 +465,55 @@ function loadGrußwortHTML() {
         </div>
       </div>
     </div>
+  `;
+  window.scrollTo(0, 0);
+}
+
+function loadMitgliedHTML() {
+  document.getElementById("contentDiv").innerHTML = `
+<div class="container my-5">
+  <div class="text-center mb-4">
+    <h2 class="mb-3">Mitglied werden</h2>
+
+    <!-- kurze Einleitung -->
+    <p class="lead">
+      Du möchtest den Bürgerfonds Waldbrunn e.V. unterstützen und Mitglied werden?  
+      Fülle unseren Mitgliedsantrag aus und gib ihn <strong>im Rathaus, in der WABE oder direkt bei einem Vorstandsmitglied</strong> ab.
+    </p>
+
+    <!-- etwas mehr Substanz -->
+    <p>
+      <strong>So funktioniert’s in drei einfachen Schritten:</strong>
+    </p>
+    <ol class="text-start" style="max-width: 700px; margin: 0 auto; font-size: 1.25rem;">
+      <li>Lade den Antrag als PDF herunter.</li>
+      <li>Fülle ihn aus – handschriftlich <em>oder</em> digital in deinem PDF-Viewer.</li>
+      <li>Reiche das ausgefüllte Formular ein: persönlich (Rathaus / WABE / Vorstand) oder per E-Mail als PDF-Anhang.</li>
+    </ol>
+
+    <!-- Beitragsinfo -->
+    <p class="mt-3">
+      Der jährliche Mitgliedsbeitrag beträgt <strong>mindestens 12 €</strong>. Höhere Beträge sind natürlich jederzeit willkommen.
+    </p>
+
+    <!-- Download-Button -->
+    <a href="pdf/Mitgliedsantrag.pdf" class="btn btn-success btn-lg mt-3" target="_blank">
+      📄 Mitgliedsantrag herunterladen
+    </a>
+
+    <!-- Kontakt -->
+    <p class="mt-4 mb-0">
+      Fragen? Schick uns einfach eine Mail an&nbsp;
+      <a href="mailto:kontakt@buergerfonds-waldbuettelbrunn.de">kontakt@buergerfonds-waldbuettelbrunn.de</a>
+    </p>
+
+    <!-- Datenschutz-Hinweis -->
+    <p class="fst-italic small mt-2">
+      Deine Angaben werden vertraulich und gemäß den gesetzlichen Datenschutz­bestimmungen behandelt.
+    </p>
+  </div>
+</div>
+
   `;
   window.scrollTo(0, 0);
 }
