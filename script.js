@@ -1,4 +1,3 @@
-
 function loadStartHTML() {
   document.getElementById("contentDiv").innerHTML = "";
   document.getElementById("contentDiv").innerHTML = `
@@ -119,7 +118,7 @@ function loadImpressumHTML() {
                 <p>
                     Eintragung im Vereinsregister<br>
                     Registernummer: 201495<br>
-                    Sitz des Vereins: Waldbrunn
+                    Sitz des Vereins: Waldbrunn<br>
                     Registergericht: Amtgericht Würzburg
                 </p>
                 <p>
@@ -141,15 +140,20 @@ function loadDatenschutzHTML() {
         <div class="container my-5">
             <h2 class="mb-4 text-center">Datenschutzerklärung</h2>
             <p>Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG).</p>
-            
-            <h5 class="mt-4">Kontaktaufnahme</h5>
+            <br>
+            <br>
+
+            <h5 class="mt-4">1. Kontaktaufnahme</h5>
             <p>Wenn Sie per E-Mail Kontakt mit uns aufnehmen, werden Ihre angegebenen Daten zwecks Bearbeitung der Anfrage gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
-            
-            <h5 class="mt-4">Speicherung von Zugriffsdaten</h5>
+            <br>
+
+            <h5 class="mt-4">2. Speicherung von Zugriffsdaten</h5>
             <p>Beim Besuch unserer Webseite werden automatisch Informationen allgemeiner Natur erfasst (z.B. IP-Adresse, Uhrzeit, verwendeter Browser). Diese Daten sind nicht bestimmten Personen zuordenbar und dienen nur zur Sicherstellung eines störungsfreien Betriebs.</p>
-            
-            <h5 class="mt-4">Ihre Rechte</h5>
+            <br>
+
+            <h5 class="mt-4">3. Ihre Rechte</h5>
             <p>Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt, kontaktieren Sie uns bitte.</p>
+            <br>
 
             <p class="mt-4"><strong>Kontakt für Datenschutzanfragen:</strong><br>
             Hans Fiederling<br>
@@ -280,6 +284,13 @@ function loadAnsprechpartnerHTML() {
         icon: "✉️    "
       },
       {
+        name: "Norbert Postberg",
+        rolle: "Schriftführer",
+        tel: "09306 - 2740",
+        mail: "Norbert.Postberg@Bürgerfonds-Waldbrunn.de",
+        icon: "✉️    "
+      },
+      {
         name: "Paula Heller",
         rolle: "Kassiererin",
         tel: "09306 - 8541",
@@ -292,14 +303,6 @@ function loadAnsprechpartnerHTML() {
         tel: "09306 - 984573",
         mail: "",
         icon: ""
-      },
-      {
-        name: "Norbert Postberg",
-        rolle: "Schriftführer",
-        tel: "09306 - 2740",
-        mail: "Norbert.Postberg@Bürgerfonds-Waldbrunn.de",
-        icon: "✉️    "
-
       }
     ].map(p => `
                                     <div class="col">
@@ -428,7 +431,8 @@ function loadSatzungHTML() {
               <h5 class="mt-4">§ 16 Auflösung des Vereins</h5>
               <p>1. Bei Auflösung des Vereins erfolgt die Liquidation durch den bei der Auflösung bestehenden Vorstand.</p>
               <p>2. Bei Auflösung des Vereins oder bei Wegfall des bisherigen Zweckes fällt das Vereinsvermögen an die Gemeinde Waldbrunn. Diese hat es zu gemeinnützigen Zwecken im Sinne des Vereins zu verwenden.</p>
-
+              <br>
+              <p>Waldbrunn, den 2.10.2023</p>
             </div>
           </div>
         </div>
@@ -445,7 +449,8 @@ function loadGrußwortHTML() {
         <div class="col-md-10">
           <div class="card bg-light border-0 shadow-sm">
             <div class="card-body">
-              <h2 class="text-center mb-4">Grußwort von Bürgermeister Markus Haberstumpf</h2>
+              <h2 class="mb-1">Grußwort von Bürgermeister</h2>
+              <h4 class="mb-4">Markus Haberstumpf</h4>
               <div class="row">
                 <div class="col-md-4 text-center mb-3">
                   <img src="bilder/Bürgermeister.png" class="img-fluid rounded shadow-sm" alt="Bürgermeister">
@@ -477,8 +482,8 @@ function loadMitgliedHTML() {
 
     <!-- kurze Einleitung -->
     <p class="lead">
-      Du möchtest den Bürgerfonds Waldbrunn e.V. unterstützen und Mitglied werden?  
-      Fülle unseren Mitgliedsantrag aus und gib ihn <strong>im Rathaus, in der WABE oder direkt bei einem Vorstandsmitglied</strong> ab.
+      Sie möchten den Bürgerfonds Waldbrunn e.V. unterstützen und Mitglied werden?  
+      Füllen Sie unseren Mitgliedsantrag aus und geben Sie ihn <strong>im Rathaus, in der WABE oder direkt bei einem Vorstandsmitglied</strong> ab.
     </p>
 
     <!-- etwas mehr Substanz -->
@@ -486,9 +491,9 @@ function loadMitgliedHTML() {
       <strong>So funktioniert’s in drei einfachen Schritten:</strong>
     </p>
     <ol class="text-start" style="max-width: 700px; margin: 0 auto; font-size: 1.25rem;">
-      <li>Lade den Antrag als PDF herunter.</li>
-      <li>Fülle ihn aus – handschriftlich <em>oder</em> digital in deinem PDF-Viewer.</li>
-      <li>Reiche das ausgefüllte Formular ein: persönlich (Rathaus / WABE / Vorstand) oder per E-Mail als PDF-Anhang.</li>
+      <li>Laden Sie den Antrag als PDF herunter.</li>
+      <li>Füllen Sie ihn aus – handschriftlich <em>oder</em> digital in Ihrem PDF-Viewer.</li>
+      <li>Reichen Sie das ausgefüllte Formular ein: persönlich (Rathaus / WABE / Vorstand) oder per E-Mail als PDF-Anhang.</li>
     </ol>
 
     <!-- Beitragsinfo -->
@@ -503,17 +508,16 @@ function loadMitgliedHTML() {
 
     <!-- Kontakt -->
     <p class="mt-4 mb-0">
-      Fragen? Schick uns einfach eine Mail an&nbsp;
+      Fragen? Schreiben Sie uns einfach eine Mail an&nbsp;
       <a href="mailto:kontakt@buergerfonds-waldbrunn.de">kontakt@buergerfonds-waldbrunn.de</a>
     </p>
 
     <!-- Datenschutz-Hinweis -->
     <p class="fst-italic small mt-2">
-      Deine Angaben werden vertraulich und gemäß den gesetzlichen Datenschutz­bestimmungen behandelt.
+      Ihre Angaben werden vertraulich und gemäß den gesetzlichen Datenschutz­bestimmungen behandelt.
     </p>
   </div>
 </div>
-
   `;
   window.scrollTo(0, 0);
 }
