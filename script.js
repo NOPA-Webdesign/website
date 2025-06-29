@@ -169,7 +169,7 @@ function loadBuergerfondsHTML() {
                         <div class="card-body p-4">
                             <h2 class="card-title text-center mb-4">Was ist der Bürgerfonds Waldbrunn e.V.?</h2>
                             <p>
-                                Der <strong>Bürgerfonds Waldbrunn e.V.</strong> ist eine solidarische Initiative, die Menschen wohnhaft in Waldbrunn, in einer aktuellen Notlage unterstützt –
+                                Der <strong>Bürgerfonds Waldbrunn e.V.</strong> ist eine solidarische Initiative, die Menschen, wohnhaft in Waldbrunn, in einer aktuellen Notlage unterstützt –
                                 schnell, vertraulich und unbürokratisch. Er wurde gegründet, um dort zu helfen, wo staatliche Hilfen zu spät greifen oder gar nicht vorgesehen sind.
                             </p>
                             <p>
@@ -240,7 +240,7 @@ function loadUnterstuetzenHTML() {
                 </div>
             </div>
               <div class="text-center mt-4">
-                        <img src="bilder/handHerz.jpg" alt="GruppenBild" class="img-fluid rounded shadow-sm" style="max-width: 45%; height: auto;">
+                        <img src="bilder/handHerz.jpg" alt="handHerz" class="img-fluid rounded shadow-sm" style="max-width: 45%; height: auto;">
               </div>
         </div>
     `;
@@ -504,7 +504,7 @@ function loadMitgliedHTML() {
     <!-- Kontakt -->
     <p class="mt-4 mb-0">
       Fragen? Schick uns einfach eine Mail an&nbsp;
-      <a href="mailto:kontakt@buergerfonds-waldbuettelbrunn.de">kontakt@buergerfonds-waldbuettelbrunn.de</a>
+      <a href="mailto:kontakt@buergerfonds-waldbrunn.de">kontakt@buergerfonds-waldbrunn.de</a>
     </p>
 
     <!-- Datenschutz-Hinweis -->
