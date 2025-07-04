@@ -262,55 +262,18 @@ function loadAnsprechpartnerHTML() {
                             <div class="row row-cols-1 row-cols-md-2 g-4">
 
                                 ${[
-      {
-        name: "Hans Fiederling",
-        rolle: "Vorsitzender",
-        tel: "09306 - 1880",
-        mail: "Hans.Fiederling@Bürgerfonds-Waldbrunn.de",
-        icon: "✉️    "
-      },
-      {
-        name: "Ludwig Götzelmann",
-        rolle: "Stellv. Vorsitzender",
-        tel: "09306 - 1539",
-        mail: "Ludwig.Goetzelmann@Bürgerfonds-Waldbrunn.de",
-        icon: "✉️    "
-      },
-      {
-        name: "Regina Schneider",
-        rolle: "Stellv. Vorsitzende",
-        tel: "09306 - 8435",
-        mail: "Regina.Schneider@Bürgerfonds-Waldbrunn.de",
-        icon: "✉️    "
-      },
-      {
-        name: "Norbert Postberg",
-        rolle: "Schriftführer",
-        tel: "09306 - 2740",
-        mail: "Norbert.Postberg@Bürgerfonds-Waldbrunn.de",
-        icon: "✉️    "
-      },
-      {
-        name: "Paula Heller",
-        rolle: "Kassiererin",
-        tel: "09306 - 8541",
-        mail: "",
-        icon: ""
-      },
-      {
-        name: "Martina Kronenberger",
-        rolle: "Stellv. Kassiererin",
-        tel: "09306 - 984573",
-        mail: "",
-        icon: ""
-      }
+      { name: "Hans Fiederling", tel: "09306 - 1880", mail: "Hans.Fiederling@Bürgerfonds-Waldbrunn.de", icon: "✉️" },
+      { name: "Ludwig Götzelmann", tel: "09306 - 1539", mail: "Ludwig.Goetzelmann@Bürgerfonds-Waldbrunn.de", icon: "✉️" },
+      { name: "Regina Schneider", tel: "09306 - 8435", mail: "Regina.Schneider@Bürgerfonds-Waldbrunn.de", icon: "✉️" },
+      { name: "Norbert Postberg", tel: "09306 - 2740", mail: "Norbert.Postberg@Bürgerfonds-Waldbrunn.de", icon: "✉️" },
+      { name: "Paula Heller", tel: "09306 - 8541", mail: "", icon: "" },
+      { name: "Martina Kronenberger", tel: "09306 - 984573", mail: "", icon: "" }
     ].map(p => `
                                     <div class="col">
                                         <div class="border rounded p-3 h-100 shadow-sm bg-white">
                                             <h5 class="mb-1">${p.name}</h5>
-                                            <p class="mb-1"><strong>${p.rolle}</strong></p>
                                             <p class="mb-1">📞 ${p.tel}</p>
-                                            <p class="mb-0">${p.icon} <a href="mailto:${p.mail}" style="color: #a3c814; font-size: auto;">${p.mail}</a></p>
+                                            <p class="mb-0">${p.mail ? `${p.icon} <a href="mailto:${p.mail}" style="color: #a3c814;">${p.mail}</a>` : ''}</p>
                                         </div>
                                     </div>
                                 `).join('')}
@@ -321,7 +284,16 @@ function loadAnsprechpartnerHTML() {
 
                     <div class="text-center mt-4">
                         <img src="bilder/GruppenBild.jpg" alt="GruppenBild" class="img-fluid rounded shadow-sm" style="max-width: 100%; height: auto;">
+                        <div class="mt-3" style="font-size: 80%;">
+                            <p>
+                               Hintere Reihe: Martina Kronenberger | Ludwig Götzelmann | Hans Fiederling | Norbert Postberg
+                            </p>
+                            <p>
+                               Vordere Reihe: Paula Heller | Regina Schneider
+                            </p>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
