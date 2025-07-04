@@ -85,7 +85,7 @@ function loadAnlaufstellenHTML() {
                     <li>• Schuldnerberatung</li>
                     <li>• Allgemeiner Sozialdienst</li>
                     <li>• Suchtberatung</li>
-                    <li>• Christliche Kirchen</li>
+                    <li>• Christliche Kirchen & andere Religionsgemeinschaften</li>
                     <li>• Höchberger Tafel</li>
                 </ul>
                 <p class="mt-4">
